@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b7a8885c4a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <img class="banner-pic" align="right" src="images/aa.png" height="480px" width="480px" style="border-radius: 50%; background-color: #1961b3;" id="banner">
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Prashant<br> Kumar</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------ABOUT-------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic2.png" width="100px" height="500px" style="border-radius: 41% 59% 47% 53% / 51% 31% 69% 49%      ; background: linear-gradient(89.7deg, rgb(20, 29, 63) -10.7%, rgb(18, 56, 90) 88.8%);">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> <ul>
+                        &nbsp; <li>  I'm Prashant Kumar interested in FrontEnd Web Development.</li>
+                        &nbsp; <li>  Learning new trends in HTML, CSS and JS.</li>
+                        &nbsp; <li>  Pursuing BCA from VIPS Delhi.</li> 
+                        &nbsp; <li>  Eager to learn new things and technologies.
+                        </ul>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Structuring websites</li>
+                            <li><span>CSS</span><br>Styling Websites</li>
+                            <li><span>JavaScript</span><br>Responsive Websites</li>
+                            <li><span>React.js</span><br>Javascript Library</li>
+                            <li><span>Git/Github</span><br>Version Control</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>Graduation, Vivekananda Institute of Professional Studies</li>
+                            <li><span>2021</span><br>Intermediate, RPVV Vasant Kunj</li>
+                            <li><span>2019</span><br>Matriculate, GBSSS Rajokari</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------------------------------->
+
+<!-------------------------------------SERVICES-------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>HTML is the standard markup language for documents designed to be displayed 
+                    in a web browser. It defines the meaning and structure of web content.</p>
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"> Learn more </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2> CSS</h2>
+                <p>CSS is the language we use to style an HTML document.
+                    CSS describes how HTML elements should be displayed.</p>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"> Learn more </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JavaScript</h2>
+                <p>JavaScript is a scripting language that enables you to create 
+                    dynamically updating content, control multimedia, animate images, 
+                    and pretty much everything else.</p>
+                    <a href="https://www.javatpoint.com/javascript-tutorial" target="_blank"> Learn more </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-bootstrap"></i>
+                <h2>Bootstrap</h2>
+                <p>Bootstrap is a free, open source front-end development framework 
+                    for the creation of websites and web apps.</p>
+                    <a href="https://getbootstrap.com/" target="_blank"> Learn more </a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>React.js</h2>
+                <p>React is the library for web and native user interfaces. Build user interfaces 
+                    out of individual pieces called components written in JavaScript.</p>
+                    <a href="https://react.dev/" target="_blank"> Learn more </a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+                <p>Java is a popular programming language.
+                    Java can be used in android as well as web development</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Java" target="_blank"> Learn more </a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>git/github</h2>
+                <p>GitHub is a developer platform that allows developers to create, store, 
+                    manage and share their code provided by software called git.</p>
+                    <a href="https://docs.github.com/en/get-started/using-git/about-git" target="_blank"> Learn more </a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>Figma</h2>
+                <p>Figma is a collaborative web application for interface design, 
+                    with additional offline features enabled by desktop applications for macOS and Windows. </p>
+                    <a href="https://www.figma.com/" target="_blank"> Learn more </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------->
+
+<!-- -----------------------------------PORTFOLIO------------------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/quote.jpg">
+                <div class="layer">
+                    <h3>Quote Generator</h3>
+                    <p>This app generates motivational quotes to make your day happy.</p>
+                    <a href="https://quotified.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/qr.jpg" height="380px">
+                <div class="layer">
+                    <h3>QR Generator</h3>
+                    <p>This app connects you to the talented people around the world.</p>
+                    <a href="https://generatingcode.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/pass1.jpg" height="380px">
+                <div class="layer">
+                    <h3>Password Generator</h3>
+                    <p>This app connects you to the talented people around the world.</p>
+                    <a href="https://generatingpass.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------------------------------------------- -->
+
+<!-- ------------------------------------CONTACT----------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>email2prashantkr@gmail.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i>@prashant1311 </p>
+                <p> <i class="fa-solid fa-phone"></i>+91 8287619790</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100022841550225&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/prashant-kumar-b68a90227/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/pkprashantkr"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/phobicc_prashant/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+                </form>
+                <span id="msg"> Please fill the details....</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i>2023 All rights reserved | Prashant Kumar </p>
+    </div>
+</div>
+
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+
+
+<!-------------------For about me section---------------->
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>    
+<!------------------------------------------------------>
+
+<!-- -----------For responsive menu buttons-------------------------- -->
+<script>
+
+    var sidemenu= document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwQk2MOWnowQMtmmQ23stCM5UxgEmqKbfJgV8Xd_WH4OE9yCyX1xZAnM9I5Xj4aXV26/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })  
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
