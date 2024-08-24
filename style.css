@@ -1,4 +1,4 @@
-    *{
+*{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -38,6 +38,7 @@ body{
 
 .container{
     padding: 10px 10%;
+    
 }
 
 nav{
@@ -98,7 +99,50 @@ body::-webkit-scrollbar {
 #about{
     padding: 80px 0;
     color: #ababab;
+    
 }
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.delay:nth-child(1){
+    transition-delay: 200ms;
+}
+
+.delay:nth-child(2){
+    transition-delay: 400ms;
+}
+
+
 .row{
     display: flex;
     justify-content: space-between;

@@ -26,8 +26,8 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <img class="banner-pic" align="right" src="images/aa.png" height="480px" width="480px" style="border-radius: 50%; background-color: #1961b3;" id="banner">
-            <div class="header-text">
+            <img class="banner-pic hidden" align="right" src="images/aa.png" height="480px" width="480px" style="border-radius: 50%; background-color: #1961b3;" id="banner">
+            <div class="header-text hidden">
                 <p>Frontend Developer</p>
                 <h1>Hi, I'm <span>Prashant<br> Kumar</span></h1>
             </div>
@@ -36,13 +36,13 @@
 
     <!------------------------------------ABOUT-------------------------------------------->
 
-    <div id="about">
+    <div id="about" class="view">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1 hidden">
                     <img src="images/pic2.png" width="100px" height="500px" style="border-radius: 41% 59% 47% 53% / 51% 31% 69% 49%      ; background: linear-gradient(89.7deg, rgb(20, 29, 63) -10.7%, rgb(18, 56, 90) 88.8%);">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2 hidden">
                     <h1 class="sub-title">About Me</h1>
                     <p> <ul>
                         &nbsp; <li>  I'm Prashant Kumar interested in FrontEnd Web Development.</li>
@@ -86,21 +86,21 @@
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-html5"></i>
                 <h2>HTML</h2>
                 <p>HTML is the standard markup language for documents designed to be displayed 
                     in a web browser. It defines the meaning and structure of web content.</p>
                     <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"> Learn more </a>
             </div>
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-css3-alt"></i>
                 <h2> CSS</h2>
                 <p>CSS is the language we use to style an HTML document.
                     CSS describes how HTML elements should be displayed.</p>
                     <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"> Learn more </a>
             </div>
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-js"></i>
                 <h2>JavaScript</h2>
                 <p>JavaScript is a scripting language that enables you to create 
@@ -108,7 +108,7 @@
                     and pretty much everything else.</p>
                     <a href="https://www.javatpoint.com/javascript-tutorial" target="_blank"> Learn more </a>
             </div>
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-bootstrap"></i>
                 <h2>Bootstrap</h2>
                 <p>Bootstrap is a free, open source front-end development framework 
@@ -116,7 +116,7 @@
                     <a href="https://getbootstrap.com/" target="_blank"> Learn more </a>
             </div>
 
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-react"></i>
                 <h2>React.js</h2>
                 <p>React is the library for web and native user interfaces. Build user interfaces 
@@ -124,7 +124,7 @@
                     <a href="https://react.dev/" target="_blank"> Learn more </a>
             </div>
 
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-java"></i>
                 <h2>Java</h2>
                 <p>Java is a popular programming language.
@@ -132,7 +132,7 @@
                     <a href="https://developer.mozilla.org/en-US/docs/Glossary/Java" target="_blank"> Learn more </a>
             </div>
 
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-github"></i>
                 <h2>git/github</h2>
                 <p>GitHub is a developer platform that allows developers to create, store, 
@@ -140,7 +140,7 @@
                     <a href="https://docs.github.com/en/get-started/using-git/about-git" target="_blank"> Learn more </a>
             </div>
 
-            <div>
+            <div class="block">
                 <i class="fa-brands fa-figma"></i>
                 <h2>Figma</h2>
                 <p>Figma is a collaborative web application for interface design, 
@@ -159,7 +159,7 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
 
-            <div class="work">
+            <div class="work delay hidden">
                 <img src="images/quote.jpg">
                 <div class="layer">
                     <h3>Quote Generator</h3>
@@ -168,7 +168,7 @@
                 </div>
             </div>
 
-            <div class="work">
+            <div class="work hidden delay">
                 <img src="images/qr.jpg" height="380px">
                 <div class="layer">
                     <h3>QR Generator</h3>
@@ -177,7 +177,7 @@
                 </div>
             </div>
             
-            <div class="work">
+            <div class="work hidden delay">
                 <img src="images/pass1.jpg" height="380px">
                 <div class="layer">
                     <h3>Password Generator</h3>
@@ -201,12 +201,15 @@
                 <p><i class="fa-solid fa-paper-plane"></i>@prashant1311 </p>
                 <p> <i class="fa-solid fa-phone"></i>+91 8287619790</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100022841550225&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/prashant-kumar-b68a90227/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/pkprashantkr"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/phobicc_prashant/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100022841550225&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    
+                    <a href="https://www.linkedin.com/in/prashant-kumar-b68a90227/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+                    
+                    <a href="https://github.com/pkprashantkr"><i class="fa-brands fa-github" target="_blank"></i></a>
+                    
+                    <a href="https://www.instagram.com/phobicc_prashant/"><i class="fa-brands fa-instagram" target="_blank"></i></a>
                 </div>
-                <a href="images/my-cv.pdf" target="_blank" class="btn btn2">Download CV</a>
+                    <a href="images/my-cv.pdf" target="_blank" class="btn btn2" target="_blank">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -224,73 +227,7 @@
     </div>
 </div>
 
-<script>
-    let popup = document.getElementById("popup");
-
-    function openPopup(){
-        popup.classList.add("open-popup");
-    }
-
-    function closePopup(){
-        popup.classList.remove("open-popup");
-    }
-</script>
-
-
-<!-------------------For about me section---------------->
-<script>
-
-    var tablinks= document.getElementsByClassName("tab-links");
-    var tabcontents= document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>    
-<!------------------------------------------------------>
-
-<!-- -----------For responsive menu buttons-------------------------- -->
-<script>
-
-    var sidemenu= document.getElementById("sidemenu");
-    
-    function openmenu(){
-        sidemenu.style.right= "0";
-    }
-    
-    function closemenu(){
-        sidemenu.style.right= "-200px";
-    }
-
-</script>
-
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwQk2MOWnowQMtmmQ23stCM5UxgEmqKbfJgV8Xd_WH4OE9yCyX1xZAnM9I5Xj4aXV26/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })  
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+ <script src="script.js"></script>
 
 </body>
 
