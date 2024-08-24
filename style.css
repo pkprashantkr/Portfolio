@@ -20,25 +20,29 @@ body{
 }
 
 .header-text{
-    margin-top: 25%;
+    margin-top: 22%;
+    margin-left: 5%;
     font-size: 30px;
 }
 .header-text h1{
-    font-size: 60px;
-    margin-top: 1%;
+    font-size: 55px;
+    
 }
 .header-text h1 span{
     color: #2882e9;
 }
 
+.header-text p{
+    
+    font-size: 25px;
+}
+
 #banner{
     margin-top: 5%;
-    
 }
 
 .container{
-    padding: 10px 10%;
-    
+    padding: 10px 10%;   
 }
 
 nav{
@@ -191,19 +195,21 @@ body::-webkit-scrollbar {
     width: 60%;
 }
 
-.tab-contents ul li{
+.tab-contents ul, li{
     list-style: none;
-    margin: 10px 0;
+    margin: 0;
+    
 }
 .tab-contents ul li span{
     color: #56a1f7;
-    font-size: 14px;
+    font-size: 17px;
 }
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
-    display: block;
+    display: inline-block;
+    
 }
 /*-----------------------------------------*/
 
@@ -433,15 +439,20 @@ nav .fa-solid{
     .banner-pic {
         max-width: 100%;
         height: auto;
+        margin-left: 35px;
+        margin-bottom: 20px;
       }
       
     .header-text{
-        margin-left: 20px;
-        margin-top: 110%;
+        margin-left: 25px;
+        margin-top: 10%;
         font-size: 40px;  
     }
     .header-text h1{
-        font-size: 30px;  
+        font-size: 45px;  
+    }
+    .header-text p{
+        font-size: 25px;  
     }
     nav .fa-solid{
         display: block;
