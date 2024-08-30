@@ -282,6 +282,11 @@ body::-webkit-scrollbar {
     background: #2882e9;
     transform: translateY(-10px);
 }
+
+#learn-more{
+    background-color: #414141;
+}
+
 /* ------------------------------------- */
 
 
