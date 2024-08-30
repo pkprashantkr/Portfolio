@@ -133,6 +133,14 @@ body::-webkit-scrollbar {
     transition: all 1s;
 }
 
+.hidden:nth-child(1){
+    transition-delay: 200ms;
+}
+
+.hidden:nth-child(2){
+    transition-delay: 400ms;
+}
+
 .show{
     opacity: 1;
     filter: blur(0);
