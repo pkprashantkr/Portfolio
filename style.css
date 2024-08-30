@@ -155,15 +155,15 @@ body::-webkit-scrollbar {
 }
 
 .delay:nth-child(4){
-    transition-delay: 200ms;
+    transition-delay: 800ms;
 }
 
 .delay:nth-child(5){
-    transition-delay: 400ms;
+    transition-delay: 200ms;
 }
 
 .delay:nth-child(6){
-    transition-delay: 600ms;
+    transition-delay: 400ms;
 }
 
 
