@@ -37,9 +37,6 @@ body{
     font-size: 35px;
 }
 
-#banner{
-    margin-top: 15%;
-}
 
 .container{
     padding: 10px 10%;   
@@ -461,8 +458,9 @@ nav .fa-solid{
         max-width: 100%;
         height: auto;
         margin-left: 35px;
-        margin-top: 400px;
+        margin-top: 25%;
         margin-bottom: 50px;
+        
       }
 
     .quote{
