@@ -43,7 +43,7 @@ function closemenu(){
     sidemenu.style.right= "-200px";
 }
 
-// -----------------------------------------------------------------------
+// ---------------------Contact Me Form--------------------------------------------------
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwQk2MOWnowQMtmmQ23stCM5UxgEmqKbfJgV8Xd_WH4OE9yCyX1xZAnM9I5Xj4aXV26/exec'
 const form = document.forms['submit-to-google-sheet']
@@ -63,7 +63,7 @@ form.addEventListener('submit', e => {
 })
 
 
-// ------------------For animations----------------------
+// ------------------For My work animations 1----------------------
 
 const observer1 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -80,7 +80,7 @@ const hiddenElements1 = document.querySelectorAll('.hidden');
 hiddenElements1.forEach((el) => observer1.observe(el))
 
 
-// ===============================================================
+// =====================Transition in My work 2==========================================
 
 
 const observer2 = new IntersectionObserver((entries2) => {
@@ -96,3 +96,20 @@ const observer2 = new IntersectionObserver((entries2) => {
 
 const hiddenElements2 = document.querySelectorAll('.hidden-block');
 hiddenElements2.forEach((el2) => observer2.observe(el2))
+
+
+// =========================== SEE MORE Button====================================
+
+document.getElementById("see-more-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+    const hiddenWorks = document.querySelectorAll(".work.load");
+
+    for (let i = 0; i < 3 && i < hiddenWorks.length; i++) {
+        hiddenWorks[i].classList.remove("load");
+    }
+
+    // If there are no more hidden works, hide the button
+    if (document.querySelectorAll(".work.load").length === 0) {
+        document.getElementById("see-more-btn").style.display = "none";
+    }
+});

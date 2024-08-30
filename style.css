@@ -16,7 +16,7 @@ body{
 
 #header{
     width: 100%;
-    height: 100vh;
+    height: 93vh;
 }
 
 .header-text{
@@ -138,12 +138,32 @@ body::-webkit-scrollbar {
     transform: translateX(0);
 }
 
+.load {
+    display: none;
+}
+
 .delay:nth-child(1){
     transition-delay: 200ms;
 }
 
 .delay:nth-child(2){
     transition-delay: 400ms;
+}
+
+.delay:nth-child(3){
+    transition-delay: 600ms;
+}
+
+.delay:nth-child(4){
+    transition-delay: 200ms;
+}
+
+.delay:nth-child(5){
+    transition-delay: 400ms;
+}
+
+.delay:nth-child(6){
+    transition-delay: 600ms;
 }
 
 
@@ -263,7 +283,7 @@ body::-webkit-scrollbar {
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -276,13 +296,13 @@ body::-webkit-scrollbar {
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition: transform 0.5s;
+    transition: transform 0.4s;
 }
 
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #2882e9);
+    background: linear-gradient(rgba(0,0,0,0.7), #061d38);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -294,17 +314,17 @@ body::-webkit-scrollbar {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     transition: height 0.5 sec;
 }
 .layer h3{
-    padding: 5px 5px;
+    padding: 10px 10px;
     background: #fff;
     color: #080808;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 15px 30px 20px;
 }
 .layer a{
     margin-top: 20px;
@@ -312,15 +332,16 @@ body::-webkit-scrollbar {
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #ffffff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    margin-top: 35px;
 }
 
 .work:hover img{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .work:hover .layer{
     height: 100%;
@@ -328,14 +349,14 @@ body::-webkit-scrollbar {
 
 .btn{
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     width: fit-content;
     border: 1px solid #2882e9;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    transition: background 0.5s;
+    transition: 0.5s;
 }
 .btn:hover{
     background: #2882e9;
@@ -505,6 +526,6 @@ nav .fa-solid{
 }
 #msg{
     color: #61b752;
-    margin-top: -35px;
+    margin-top: -20px;
     display: block;
 }
