@@ -284,7 +284,8 @@ body::-webkit-scrollbar {
 }
 
 #learn-more{
-    background-color: #414141;
+    background-color: #242424;
+    padding: 2px;
 }
 
 /* ------------------------------------- */
