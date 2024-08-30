@@ -20,7 +20,7 @@ body{
 }
 
 .header-text{
-    margin-top: 40%;
+    margin-top: 22%;
     margin-left: 5%;
     font-size: 30px;
 }
@@ -458,7 +458,7 @@ nav .fa-solid{
         max-width: 100%;
         height: auto;
         margin-left: 35px;
-        margin-top: 25%;
+        
         margin-bottom: 50px;
         
       }
