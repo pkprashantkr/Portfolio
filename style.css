@@ -461,8 +461,11 @@ nav .fa-solid{
         margin-left: 35px;
         margin-top: 25%;
         margin-bottom: 5vh;
-        
       }
+
+    #banner{
+        margin-top: 20%;
+    }
 
     .quote{
         height: 400px;
