@@ -16,6 +16,7 @@ body{
 
 #header{
     width: 100%;
+    margin-top: 10%;
     height: 88vh;
 }
 
@@ -462,10 +463,6 @@ nav .fa-solid{
         margin-top: 25%;
         margin-bottom: 5vh;
       }
-
-    #banner{
-        margin-top: 20%;
-    }
 
     .quote{
         height: 400px;
