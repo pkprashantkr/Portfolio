@@ -288,7 +288,7 @@ body::-webkit-scrollbar {
 #learn-more{
     background-color: #3f3f3f;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #learn-more:hover{
