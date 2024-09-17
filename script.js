@@ -113,3 +113,21 @@ document.getElementById("see-more-btn").addEventListener("click", function(event
         document.getElementById("see-more-btn").style.display = "none";
     }
 });
+
+
+// ------------------------------------------------------------
+
+
+function toggleDarkMode() {
+    const body = document.body;
+    const darkLightIcon = document.getElementById('dark-light-icon');
+
+    body.classList.toggle('dark-mode');
+
+    // Check if dark mode is enabled, and change the icon accordingly
+    if (body.classList.contains('dark-mode')) {
+        darkLightIcon.src = 'assets/dark.png'; // Switch to dark mode icon
+    } else {
+        darkLightIcon.src = 'assets/light.png'; // Switch to light mode icon
+    }
+}
