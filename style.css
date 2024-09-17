@@ -8,30 +8,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    background: #080808;
-    color: #fff;
-
-}
-
-/* Light Theme (Default) */
-body {
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark Theme */
-body.dark-mode {
-    background-color: #2b2b2b;
-    color: white;
-}
-
-/* Change logo for dark mode */
-.logo.dark-mode {
-    content: url('assets/dark.png');
-}
-
 
 #header{
     width: 100%;
